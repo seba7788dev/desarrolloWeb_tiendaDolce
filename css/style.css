@@ -59,6 +59,7 @@ nav{
     height: 80px;
     width: 100%;
     align-items: center;
+    padding: 0 40px;
 }
 /* modifico el contenedor del logo */
 .nav .logo{
@@ -227,7 +228,7 @@ nav{
 /* questions */
 
 .questions{
-    width: 100%;
+
     height: 600px;
     display: flex;
     justify-content: space-between;
@@ -437,4 +438,80 @@ footer{
 .social-media i:hover{
     color: #fff;
     background-color:#1d273b ;
+}
+
+/* Breakpoints - Responsive */
+
+@media screen and (max-width:800px){
+.titulo{
+    font-size: 45px;
+}
+
+.contenido-header{
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 720px;
+}
+.contenido-header>img{
+    width: 400px;
+    height: 450px;
+    margin: 15px;
+}
+
+.textos-header{
+    margin: 0;
+}
+
+/* About us */
+
+.articulo{
+    width: 45%;
+}
+/* Questions */
+
+.questions{
+    height:720px ;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+/* Results */
+.conten-results{
+    flex-direction: column-reverse;
+
+}
+.results-text{
+    width: 100%;
+}
+.results-text>a{
+    margin-bottom: 60px;
+}
+.numbers{
+    width: 95%;
+    justify-content: space-between;
+}
+
+/*  Services */
+
+.services{
+    flex-direction: column-reverse;
+    align-items: center;
+}
+.box-skills{
+    margin: 20px 0 0 0;
+}
+.box-skills>h4{
+    width: 500px;
+}
+.services>img{
+    width: 400px;
+}
+/* Footer */
+
+footer{
+     justify-content: space-evenly;
+}
+.part-footer{
+    width: 40%;
+    margin-bottom: 40px;
 }
